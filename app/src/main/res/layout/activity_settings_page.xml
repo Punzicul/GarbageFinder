@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsPage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/main"
+        android:text="SETTINGS"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pictureDisplay"
+        android:layout_width="192dp"
+        android:layout_height="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.245"
+        app:srcCompat="@drawable/clicked_button" />
+
+    <Button
+        android:id="@+id/changePic"
+        android:layout_width="239dp"
+        android:layout_height="61dp"
+        android:background="#87CBED"
+        android:fontFamily="@font/main"
+        android:text="CHANGE PICTURE"
+        android:textColor="#3E5E6D"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/changeName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pictureDisplay" />
+
+    <Button
+        android:id="@+id/changeName"
+        android:layout_width="239dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="128dp"
+        android:background="#87CBED"
+        android:fontFamily="@font/main"
+        android:text="CHANGE USERNAME"
+        android:textColor="#3E5E6D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pictureDisplay" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="176dp"
+        android:layout_height="75dp"
+        android:background="#87CBED"
+        android:fontFamily="@font/main"
+        android:text="CONFIRM"
+        android:textColor="#3E5E6D"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeName" />
+
+    <TextView
+        android:id="@+id/nameDisplay"
+        android:layout_width="387dp"
+        android:layout_height="82dp"
+        android:fontFamily="@font/main"
+        android:gravity="center"
+        android:text="USERNAME"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pictureDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.166" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

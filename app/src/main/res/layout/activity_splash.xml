@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/con"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <!-- FrameLayout to group white screen and logo -->
+    <FrameLayout
+        android:id="@+id/animationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- White Screen Overlay -->
+        <View
+            android:id="@+id/whiteScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FEFEF5" />
+
+        <!-- Logo Image -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="411dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logosplash" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
